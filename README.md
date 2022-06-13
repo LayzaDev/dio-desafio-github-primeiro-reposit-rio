@@ -1,7 +1,7 @@
 #  Desafio de Projeto sobre Git/GitHub da DIO
 
  - Repositório criado para o Desafio de Projeto.
- - Anotações das aulas de Git/GitHub na pasta
+ - Anotações das aulas de Git/GitHub na pasta: introdução ao Git e GitHub
 
 ## Links Úteis
 
