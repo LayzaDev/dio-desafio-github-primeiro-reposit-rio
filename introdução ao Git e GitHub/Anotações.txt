@@ -1,5 +1,153 @@
-Link para download do Git: https://git-scm.com/downloads
+INTRODUÇÃO AO GIT/GITHUB
+
+Git
+
+- É um software de versionamento de código, seu sistema é distribuído e seguro.
+- Ajuda a criar e monitorar diferentes versões do código, dentro da máquina.
+- Manipula através de objetos ( blob, tree e commit )
+
+GitHub
+
+- É uma empresa da Microsoft, muito bem estabelecida no mercado.
+- Usada como um repositório online, onde podemos armazenar nossos códigos.
 
 O que é o Git Bash? 
 
 - O Git Bash é um terminal extendido para otimizar o uso do Git.
+
+INTERAÇÃO COM O TERMINAL - Windows
+
+cd 
+    - Navega entre as pastas
+    
+dir 
+    - Mostra a lista de diretórios dentro de uma pasta
+    
+del 
+    - Deleta os arquivos de uma pasta
+    
+mkdir 
+    - Cria uma pasta
+    
+rmdir 
+    - Deleta a pasta e os arquivos pertencentes a ela.
+
+INTERAÇÃO COM O TERMINAL - Unix
+
+cd 
+    - Navega entre as pastas
+    
+ls 
+    - Mostra a lista de diretórios dentro de uma pasta
+    
+mkdir 
+    - Cria uma pasta
+    
+rm rf  
+    - Deleta a pasta e os arquivos dentro dela
+
+VARIAÇÕES DESSA INTERAÇÃO
+
+cd / 
+    - Volta para a base do diretório  
+    
+cd / nome_pasta 
+    - Entra na pasta que desejo
+    
+cd .. 
+    - Volta uma pasta
+    
+cls 
+    - Limpa o terminal
+    
+echo 
+    - Pega uma string
+
+git status 
+    - Mostra o status do diretório
+
+mv nome_pasta ./ 
+    - Move a pasta para outro diretório
+
+git add nome_arquivo 
+    - Add um arquivo pelo nome
+
+git add * 
+    - Adiciona todas as modificações do repositório local para a staging area
+
+git add . 
+    - Adiciona todas as modificações do repositório local para a staging area
+    
+git init
+    - Inicia o repositório do git
+    
+git add
+    - Move arquivos e da inicio ao versionamento
+    
+git commit
+    - Cria o repositório
+    
+ls -a 
+    - Mostra arquivos ocultos
+
+COMO O GIT FUNCIONA POR BAIXO DOS PANOS
+
+SHA1 (Algoritmo de Hash Seguro)
+
+- É uma forma curta de representar um arquivo.
+- Faz a encriptação gerar um conjunto de caracteres identificador de 40 digitos.
+
+Objetos internos no GIT
+
+BLOBS (objeto específico do git)
+
+- O GIT manipula os dados através de objetos, então os arquivos são guardados dentro do objeto “Blob”
+- O blob contém metadados dentro dele, então ele terá dentro dele o tipo do objeto (blob), o tamanho da string, uma barra zero ( \0 ) e o conteúdo.
+
+TREE (árvores)
+
+- Armazenam as blobs e apontam tipos diferentes de blobs.
+- É uma crescente (blobs → tree → commits)
+- Também contém metadados.
+- É responsável por montar toda a estrutura de onde está os arquivos, portanto, pode apontar tanto para blobs quanto para outras árvores.
+- As árvores tem o SHA1 dos metadados.
+
+COMMIT
+
+- É o objeto que vai juntar tudo e dar sentido para a alteração que fizer.
+- O Commit aponta para a TREE, para o Commit anterior (parente) e também para o autor e a mensagem.
+- O commit também tem um “timestamp” que é um carimbo de tempo (guarda data e hora que foi criada)
+- Possui SHA1 dos seus metadados, ou seja, se eu alterar algum dado dentro do blob, ele vai gerar um SHA1 daquela blob e também vai alterar os metadados da tree, etc…
+
+CHAVES SSH
+
+- É uma forma de manter uma conexão segura entre duas máquinas.
+- A conexão é feita por duas chaves: PÚBLICA e PRIVADA
+
+Comandos para criar a chave (uso do git bash here)
+
+- ssh -keygen -t ed25519 -C email
+- Coloque uma senha 
+- eval $(ssh-agent-s)
+- ssh -add id_ed25519
+
+Criando um repositório
+
+- New repository
+- Nome e descrição do repositório 
+- Definir se é PUBLICO ou PRIVADO
+- Clicar em Create repository
+
+- Abrir Git Bash Here
+- Entrar na pasta desejada
+
+- git init
+- git remote add origin git@github.com:seu_email_git
+- git status (irá mostrar o arquivo vermelho)
+- git add "nome_da_pasta"
+- git status (irá mostrar o arquivo verde)
+- git commit -m "aqui coloco uma mensagem, tipo: comitando primeiro post"
+- git push -u origin master
+
+Link para download do Git: https://git-scm.com/downloads
+Link para GitHub: https://github.com/
