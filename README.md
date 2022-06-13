@@ -7,6 +7,6 @@
 
 [Sintaxe Basica Markdown](https://www.markdownguide.org/basic-syntax/) 
 
-[Link para download do Git:](https://git-scm.com/downloads)
+[Link para download do Git](https://git-scm.com/downloads)
 
-[Link para GitHub:](https://github.com/)
+[Link para GitHub](https://github.com/)
