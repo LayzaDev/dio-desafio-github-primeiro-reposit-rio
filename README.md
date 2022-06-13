@@ -1,7 +1,7 @@
 #  Desafio de Projeto sobre Git/GitHub da DIO
 
  - Repositório criado para o Desafio de Projeto.
- - Anotações das aulas de Git/GitHub na pasta: [Introdução ao Git e GitHub](https://github.com/LayzaDev/dio-desafio-github-primeiro-reposit-rio/blob/main/introdu%C3%A7%C3%A3o%20ao%20Git%20e%20GitHub/Anota%C3%A7%C3%B5es.txt)
+ - Confira as anotações das aulas de Git/GitHub no link: [Introdução ao Git e GitHub](https://github.com/LayzaDev/dio-desafio-github-primeiro-reposit-rio/blob/main/introdu%C3%A7%C3%A3o%20ao%20Git%20e%20GitHub/Anota%C3%A7%C3%B5es.txt)
 
 ## Links Úteis
 
