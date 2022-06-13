@@ -149,5 +149,4 @@ Criando um repositório
 - git commit -m "aqui coloco uma mensagem, tipo: comitando primeiro post"
 - git push -u origin master
 
-Link para download do Git: https://git-scm.com/downloads
-Link para GitHub: https://github.com/
+FIM!
